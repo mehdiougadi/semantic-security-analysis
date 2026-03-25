@@ -100,7 +100,7 @@ def plot_confusion_matrix(cm, save: bool = True) -> None:
             plt.savefig(path)
             logger.info(f"Confusion matrix saved to {path}")
 
-        plt.show()
+        plt.close()
     except Exception as e:
         logger.error(f"Failed to plot confusion matrix: {e}")
         raise

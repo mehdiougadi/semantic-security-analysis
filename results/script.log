@@ -1,0 +1,128 @@
+[src.data_loader] 2026-03-25 15:10:46,249 - INFO - Loading training and testing datasets from disk...
+[src.data_loader] 2026-03-25 15:10:47,722 - INFO - Train shape: (175341, 45) | Test shape: (82332, 45)
+[src.data_loader] 2026-03-25 15:12:47,776 - INFO - Loading training and testing datasets from disk...
+[src.data_loader] 2026-03-25 15:12:49,017 - INFO - Train shape: (175341, 45) | Test shape: (82332, 45)
+[src.binary_classifier] 2026-03-25 15:12:49,017 - INFO - Starting binary classification pipeline...
+[src.data_loader] 2026-03-25 15:12:49,017 - INFO - Loading training and testing datasets from disk...
+[src.data_loader] 2026-03-25 15:12:50,275 - INFO - Train shape: (175341, 45) | Test shape: (82332, 45)
+[src.data_loader] 2026-03-25 15:12:50,276 - INFO - Preparing data pipeline for binary classification...
+[src.data_loader] 2026-03-25 15:12:50,285 - INFO - Cleaning dataset: normalizing column names and handling missing values...
+[src.data_loader] 2026-03-25 15:12:50,410 - INFO - Dropped 0 missing values. Remaining nulls: 0
+[src.data_loader] 2026-03-25 15:12:50,411 - INFO - Cleaning dataset: normalizing column names and handling missing values...
+[src.data_loader] 2026-03-25 15:12:50,477 - INFO - Dropped 0 missing values. Remaining nulls: 0
+[src.data_loader] 2026-03-25 15:12:50,477 - INFO - Encoding categorical features using LabelEncoder: ['proto', 'service', 'state']
+[src.data_loader] 2026-03-25 15:12:50,647 - INFO - Categorical encoding completed successfully.
+[src.data_loader] 2026-03-25 15:12:50,648 - INFO - Splitting features and target column: 'label'...
+[src.data_loader] 2026-03-25 15:12:50,652 - INFO - x_train: (175341, 42) | x_test: (82332, 42)
+[src.data_loader] 2026-03-25 15:12:50,652 - INFO - Binary classification data pipeline complete.
+[src.binary_classifier] 2026-03-25 15:12:50,653 - INFO - Training XGBoost binary classifier (Label: 0=Normal, 1=Attack)...
+[src.binary_classifier] 2026-03-25 15:12:53,584 - INFO - Binary model training complete.
+[src.binary_classifier] 2026-03-25 15:12:53,585 - INFO - Evaluating binary model and computing metrics...
+[src.binary_classifier] 2026-03-25 15:12:53,716 - INFO - Precision:  0.8192
+[src.binary_classifier] 2026-03-25 15:12:53,716 - INFO - Recall:     0.9876
+[src.binary_classifier] 2026-03-25 15:12:53,717 - INFO - F1-Score:   0.8956
+[src.binary_classifier] 2026-03-25 15:12:53,717 - INFO - FPR:        0.2670
+[src.binary_classifier] 2026-03-25 15:12:53,717 - INFO - FNR:        0.0124
+[src.binary_classifier] 2026-03-25 15:12:53,761 - INFO - 
+Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.98      0.73      0.84     37000
+           1       0.82      0.99      0.90     45332
+
+    accuracy                           0.87     82332
+   macro avg       0.90      0.86      0.87     82332
+weighted avg       0.89      0.87      0.87     82332
+
+[src.binary_classifier] 2026-03-25 15:12:53,761 - INFO - Plotting binary confusion matrix...
+[src.binary_classifier] 2026-03-25 15:12:55,014 - INFO - Confusion matrix saved to results\binary\confusion_matrix.png
+[src.binary_classifier] 2026-03-25 15:13:03,477 - INFO - Binary classification pipeline complete.
+[src.data_loader] 2026-03-25 15:19:33,827 - INFO - Loading training and testing datasets from disk...
+[src.data_loader] 2026-03-25 15:19:35,061 - INFO - Train shape: (175341, 45) | Test shape: (82332, 45)
+[src.binary_classifier] 2026-03-25 15:19:35,062 - INFO - Starting binary classification pipeline...
+[src.data_loader] 2026-03-25 15:19:35,062 - INFO - Loading training and testing datasets from disk...
+[src.data_loader] 2026-03-25 15:19:36,280 - INFO - Train shape: (175341, 45) | Test shape: (82332, 45)
+[src.data_loader] 2026-03-25 15:19:36,280 - INFO - Preparing data pipeline for binary classification...
+[src.data_loader] 2026-03-25 15:19:36,280 - INFO - Cleaning dataset: normalizing column names and handling missing values...
+[src.data_loader] 2026-03-25 15:19:36,409 - INFO - Dropped 0 missing values. Remaining nulls: 0
+[src.data_loader] 2026-03-25 15:19:36,410 - INFO - Cleaning dataset: normalizing column names and handling missing values...
+[src.data_loader] 2026-03-25 15:19:36,474 - INFO - Dropped 0 missing values. Remaining nulls: 0
+[src.data_loader] 2026-03-25 15:19:36,475 - INFO - Encoding categorical features using LabelEncoder: ['proto', 'service', 'state']
+[src.data_loader] 2026-03-25 15:19:36,624 - INFO - Categorical encoding completed successfully.
+[src.data_loader] 2026-03-25 15:19:36,625 - INFO - Splitting features and target column: 'label'...
+[src.data_loader] 2026-03-25 15:19:36,627 - INFO - x_train: (175341, 42) | x_test: (82332, 42)
+[src.data_loader] 2026-03-25 15:19:36,627 - INFO - Binary classification data pipeline complete.
+[src.binary_classifier] 2026-03-25 15:19:36,628 - INFO - Training XGBoost binary classifier (Label: 0=Normal, 1=Attack)...
+[src.binary_classifier] 2026-03-25 15:19:39,516 - INFO - Binary model training complete.
+[src.binary_classifier] 2026-03-25 15:19:39,516 - INFO - Evaluating binary model and computing metrics...
+[src.binary_classifier] 2026-03-25 15:19:39,662 - INFO - Precision:  0.8192
+[src.binary_classifier] 2026-03-25 15:19:39,662 - INFO - Recall:     0.9876
+[src.binary_classifier] 2026-03-25 15:19:39,662 - INFO - F1-Score:   0.8956
+[src.binary_classifier] 2026-03-25 15:19:39,663 - INFO - FPR:        0.2670
+[src.binary_classifier] 2026-03-25 15:19:39,663 - INFO - FNR:        0.0124
+[src.binary_classifier] 2026-03-25 15:19:39,703 - INFO - 
+Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.98      0.73      0.84     37000
+           1       0.82      0.99      0.90     45332
+
+    accuracy                           0.87     82332
+   macro avg       0.90      0.86      0.87     82332
+weighted avg       0.89      0.87      0.87     82332
+
+[src.binary_classifier] 2026-03-25 15:19:39,703 - INFO - Plotting binary confusion matrix...
+[src.binary_classifier] 2026-03-25 15:19:40,055 - INFO - Confusion matrix saved to results\binary\confusion_matrix.png
+[src.binary_classifier] 2026-03-25 15:19:40,088 - INFO - Binary classification pipeline complete.
+[src.multiclass_classifier] 2026-03-25 15:19:40,122 - INFO - Starting multi-class classification pipeline...
+[src.data_loader] 2026-03-25 15:19:40,124 - INFO - Loading training and testing datasets from disk...
+[src.data_loader] 2026-03-25 15:19:41,385 - INFO - Train shape: (175341, 45) | Test shape: (82332, 45)
+[src.data_loader] 2026-03-25 15:19:41,386 - INFO - Preparing data pipeline for multi-class classification...
+[src.data_loader] 2026-03-25 15:19:41,387 - INFO - Cleaning dataset: normalizing column names and handling missing values...
+[src.data_loader] 2026-03-25 15:19:41,509 - INFO - Dropped 0 missing values. Remaining nulls: 0
+[src.data_loader] 2026-03-25 15:19:41,510 - INFO - Cleaning dataset: normalizing column names and handling missing values...
+[src.data_loader] 2026-03-25 15:19:41,577 - INFO - Dropped 0 missing values. Remaining nulls: 0
+[src.data_loader] 2026-03-25 15:19:41,577 - INFO - Encoding categorical features using LabelEncoder: ['proto', 'service', 'state']
+[src.data_loader] 2026-03-25 15:19:41,724 - INFO - Categorical encoding completed successfully.
+[src.data_loader] 2026-03-25 15:19:41,725 - INFO - Encoding target column 'attack_cat' for multi-class classification...
+[src.data_loader] 2026-03-25 15:19:41,778 - INFO - Attack categories encoded: ['Analysis', 'Backdoor', 'DoS', 'Exploits', 'Fuzzers', 'Generic', 'Normal', 'Reconnaissance', 'Shellcode', 'Worms']
+[src.data_loader] 2026-03-25 15:19:41,779 - INFO - Splitting features and target column: 'attack_cat'...
+[src.data_loader] 2026-03-25 15:19:41,781 - INFO - x_train: (175341, 42) | x_test: (82332, 42)
+[src.data_loader] 2026-03-25 15:19:41,781 - INFO - Multi-class classification data pipeline complete.
+[src.multiclass_classifier] 2026-03-25 15:19:41,782 - INFO - Training XGBoost multi-class classifier (attack_cat)...
+[src.multiclass_classifier] 2026-03-25 15:19:48,669 - INFO - Multi-class model training complete.
+[src.multiclass_classifier] 2026-03-25 15:19:48,669 - INFO - Evaluating multi-class model and computing per-class metrics...
+[src.multiclass_classifier] 2026-03-25 15:19:48,987 - INFO - 
+Classification Report:
+                precision    recall  f1-score   support
+
+      Analysis       0.06      0.07      0.06       677
+      Backdoor       0.04      0.11      0.06       583
+           DoS       0.51      0.07      0.13      4089
+      Exploits       0.59      0.86      0.70     11132
+       Fuzzers       0.31      0.61      0.41      6062
+       Generic       1.00      0.97      0.98     18871
+        Normal       0.97      0.76      0.85     37000
+Reconnaissance       0.93      0.81      0.86      3496
+     Shellcode       0.32      0.75      0.45       378
+         Worms       0.60      0.34      0.43        44
+
+      accuracy                           0.77     82332
+     macro avg       0.53      0.54      0.49     82332
+  weighted avg       0.83      0.77      0.78     82332
+
+[src.multiclass_classifier] 2026-03-25 15:19:48,988 - INFO - [Analysis] Recall: 0.0694 | F1: 0.0632
+[src.multiclass_classifier] 2026-03-25 15:19:48,988 - INFO - [Backdoor] Recall: 0.1132 | F1: 0.0590
+[src.multiclass_classifier] 2026-03-25 15:19:48,989 - INFO - [DoS] Recall: 0.0748 | F1: 0.1305
+[src.multiclass_classifier] 2026-03-25 15:19:48,989 - INFO - [Exploits] Recall: 0.8582 | F1: 0.7014
+[src.multiclass_classifier] 2026-03-25 15:19:48,989 - INFO - [Fuzzers] Recall: 0.6061 | F1: 0.4091
+[src.multiclass_classifier] 2026-03-25 15:19:48,989 - INFO - [Generic] Recall: 0.9698 | F1: 0.9827
+[src.multiclass_classifier] 2026-03-25 15:19:48,990 - INFO - [Normal] Recall: 0.7555 | F1: 0.8482
+[src.multiclass_classifier] 2026-03-25 15:19:48,990 - INFO - [Reconnaissance] Recall: 0.8084 | F1: 0.8644
+[src.multiclass_classifier] 2026-03-25 15:19:48,990 - INFO - [Shellcode] Recall: 0.7540 | F1: 0.4453
+[src.multiclass_classifier] 2026-03-25 15:19:48,990 - INFO - [Worms] Recall: 0.3409 | F1: 0.4348
+[src.multiclass_classifier] 2026-03-25 15:19:48,991 - INFO - Plotting multi-class confusion matrix...
+[src.multiclass_classifier] 2026-03-25 15:19:49,479 - INFO - Multi-class confusion matrix saved to results\multiclass\confusion_matrix.png
+[src.multiclass_classifier] 2026-03-25 15:19:49,492 - INFO - Plotting per-class Recall and F1-score bar charts...
+[src.multiclass_classifier] 2026-03-25 15:19:49,876 - INFO - Per-class metrics chart saved to results\multiclass\per_class_metrics.png
+[src.multiclass_classifier] 2026-03-25 15:19:49,887 - INFO - Multi-class classification pipeline complete.

@@ -1,7 +1,9 @@
 import logging
 from pathlib import Path
 
+from src.binary_classifier import run_binary_classification
 from src.data_loader import load_data
+from src.multiclass_classifier import run_multiclass_classification
 
 
 def setup_logging():
@@ -21,6 +23,8 @@ def setup_logging():
 def main():
     setup_logging()
     train, test = load_data()
+    run_binary_classification()
+    run_multiclass_classification()
 
 
 if __name__ == "__main__":
