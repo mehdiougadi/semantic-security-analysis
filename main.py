@@ -1,6 +1,7 @@
 import logging
 from pathlib import Path
 
+from src.attack_profiling import run_attack_profiling
 from src.binary_classifier import run_binary_classification
 from src.data_loader import load_data
 from src.feature_semantics import run_feature_semantics
@@ -28,6 +29,7 @@ def main():
     run_binary_classification()
     run_multiclass_classification()
     run_feature_semantics()
+    run_attack_profiling()
 
 
 if __name__ == "__main__":

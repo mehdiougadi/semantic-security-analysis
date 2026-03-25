@@ -143,9 +143,9 @@ def analyze_feature_distributions(save: bool = True) -> None:
 
         fig, axes = plt.subplots(1, len(available), figsize=(18, 4))
 
-        for ax, feat in zip(axes, available):
+        for ax, feat in zip(axes, available, strict=False):
             for label, color, name in zip(
-                [0, 1], ["steelblue", "tomato"], ["Normal", "Attack"]
+                [0, 1], ["steelblue", "tomato"], ["Normal", "Attack"], strict=False
             ):
                 subset = train[train["label"] == label][feat].dropna()
                 subset = subset[subset < subset.quantile(0.99)]
