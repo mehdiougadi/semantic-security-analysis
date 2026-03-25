@@ -4,3 +4,4 @@
 
 # Other
 .ruff_cache
+**.csv
