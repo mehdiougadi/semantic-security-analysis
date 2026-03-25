@@ -5,6 +5,7 @@ from src.attack_profiling import run_attack_profiling
 from src.binary_classifier import run_binary_classification
 from src.data_loader import load_data
 from src.false_negatives import run_false_negative_analysis
+from src.false_positives import run_false_positive_analysis
 from src.feature_semantics import run_feature_semantics
 from src.multiclass_classifier import run_multiclass_classification
 
@@ -33,6 +34,7 @@ def main():
     run_attack_profiling()
 
     run_false_negative_analysis()
+    run_false_positive_analysis()
 
 
 if __name__ == "__main__":
