@@ -1,6 +1,8 @@
 import logging
 from pathlib import Path
 
+from src.data_loader import load_data
+
 
 def setup_logging():
     log_dir = Path("./results")
@@ -18,6 +20,7 @@ def setup_logging():
 
 def main():
     setup_logging()
+    train, test = load_data()
 
 
 if __name__ == "__main__":
