@@ -3,10 +3,6 @@ import logging
 import pandas as pd
 from sklearn.preprocessing import LabelEncoder
 
-logging.basicConfig(
-    level=logging.INFO,
-    format="%(asctime)s - %(levelname)s - %(message)s",
-)
 logger = logging.getLogger(__name__)
 
 TRAIN_PATH = "data/UNSW_NB15_training-set.csv"
